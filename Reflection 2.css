@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;  
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('reflection 2 bg.jpg');
+    background-size: cover;  
+    background-position: center;  
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;  
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0;
+    flex-grow: 1;  
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.header-img {
+    width: 450px;
+    height: 500px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.reflection {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
+    position: relative;
+}
+
+.reflection::before {
+    display: none; 
+}
+
+
+.reflection::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    background-color: #3498db;
+    margin: 20px auto;
+}
+
+.footer {
+    text-align: center;  
+    font-size: 0.9rem;        
+    color: #7f8c8d;
+    margin-top: 0;            
+    padding: 10px 0;           
+    width: 100%;               
+}
+
